@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Segundo HTML</title>
+        <meta charset="UTF-8">
+    </head>
+    <body style="background-color:cornflowerblue">
+        <a href="home.html">
+            Home
+        </a><br>
+        <img src="imgs/dente-de-coelho-1200x805.jpg" height="200px">
+        <p style="background-color:pink;color:seagreen">
+            Texto de exemplo
+        </p>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>huduauhdhuas</li>
+            <li>rerere</li>
+            <li>999</li>
+        </ol>
+
+        <ul id="listaItens">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>Item 2</li>
+        </ul>
+
+        <form>
+            <fieldset>
+                <legend>Dados Cadastrais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" required id="nome"><br>
+
+                <label for="dtNascimento">Data de nascimento:</label>
+                <input type="date" required id="dtNascimento"><br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" required id="idade" max="100" min="18"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados de Acesso</legend>
+                <label for="email">E-mail:</label>
+                <input type="email" required id="email"><br>
+                
+                <label for="senha">Senha:</label>
+                <input type="password" required id="senha"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Campos de seleção</legend>
+                <input type="checkbox" id="humor1" name="humor1" value="Feliz">
+                <label for="humor1">Feliz da vida</label><br>
+                <input type="checkbox" id="humor2" name="humor2" value="Triste">
+                <label for="humor2">Tristão</label><br><br>
+
+                <input type="radio" id="masculino" name="genero" value="Masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="genero" value="Feminino">
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="outro" name="genero" value="Outro">
+                <label for="outro">Outro</label>
+                <br>
+                <label for="objeto">Objetos</label>
+                <select id="objeto" name="objeto">
+                    <option value="cama">Caminha</option>
+                    <option value="pc">Computador</option>
+                    <option selected value="urso">Ursinho</option>
+                </select>
+                <br>
+                <label for="comodos">Comodos</label>
+                <input list="comodos">
+                <datalist id="comodos" name="comodos">
+                    <option value="Cozinha"></option>
+                    <option value="Quarto"></option>
+                    <option value="Sala"></option>
+                </datalist>
+                <br>
+                <label for="descricao">Descrição</label><br>
+                <textarea id="descricao" name="descricao" rows="5" cols="50"></textarea>
+
+                <script>
+                    function ola(){
+                        alert('oii');
+                    }
+                </script>
+                <input type="button" value="Clique em mim" onclick="ola()">
+
+            </fieldset>
+
+            
+            <br>
+            <input type="submit" style="background-color:seagreen;color:white;border:none;width:80px;height:30px" value="Salvar">
+            <input type="reset" value="Cancelar" style="background-color:orangered;color:white;border:none;width:80px;height:30px">
+        </form>
+
+    
+    </body>
+</html>
